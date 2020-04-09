@@ -66,7 +66,7 @@ function App() {
 
   React.useEffect(() => {
     setConvertedValue(amount * rates[currency])
-  }, [amount, currency]);
+  }, [amount, currency, rates]);
 
   React.useEffect(() => {
     getCurrencyRate();
